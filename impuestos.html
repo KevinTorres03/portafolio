@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impuestos 2021 | salaryOrg </title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: aliceblue;
+        }
+        #tittle{
+            border: 1px solid black;
+            width: 80%;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            background-color: rgb(67, 125, 231);
+        }#center{
+            padding-top: 10px;
+            border: 1px solid black;
+            width: 80%;
+            background-color: azure;
+            border-radius: 10px;
+            padding-bottom: 10px;
+        }#confirmar{
+            margin-top: 5px;
+            border-radius: 10px;
+        }#render{
+            display: none;
+        }
+    </style>
+    <div>
+        
+        <center>
+            <div id="tittle">
+                <h2>Salarios e impuestos</h2>
+                vamos a calcular la mediana de impuestos que paga el usuario actualmente 
+            </div>
+        </center>
+        <center>
+            
+            <div id="center">
+                <div id="seleccion">
+                    seleccione la cantidad de meses de ingresos de presupuestos:
+                    <select name="cantidad" id="cantidad">
+                        <option value="">seleccione...</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <form action="" method="post">
+                    <label for="nombre">Ingrese su nombre: </label><br>
+                    <input type="text"><br>
+                    
+                    <div id="render">
+                        <label for="valor">Ingrese el valor del impuesto de los meses seleccionados: </label><br>
+                    </div>
+                    <input type="button" value="calcular" id="confirmar">
+                </form>
+            </div>
+            <div id="resultado">
+
+            </div>
+        </center>
+        <script src="impuestosMediana.js"></script>
+    </div>
+</body>
+</html>

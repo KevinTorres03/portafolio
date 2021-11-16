@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio</title>
+</head>
+<body>
+    <style>
+        #cupones{
+            margin-top: 40px;
+            border: 1px dotted black;
+            width: 75%;
+        }h4{
+            color: rgb(168, 38, 38);
+            font-size: 20px;
+            text-shadow: 2px 2px 4px rgb(0, 158, 206);
+        }#respuesta{
+            margin-top: 20px;
+            border: 1px dotted black;
+            width: 75%;
+            display: none;
+        }
+    </style>
+    <center>
+        <div><h2>Hello WRLD</h2></div>
+        <button id="area">Area</button>
+        <button id="perimetro">perimetro</button>
+        <button id="raiz"> raiz</button><br>
+        <div style="margin-top: 20xp;" id="cupones">
+            <h4>Mercahogar | EL mayorista!</h4>
+            <form>
+                <label for="name">Ingrese el nombre del producto: </label>
+                <input type="text" id="name">
+                <label for="price">Ingrese el valor del producto: </label>
+                <input type="tel" name="" id="price">
+                <label for="cupon">Ingrese el codigo del cupon de descuento: </label>
+                <input type="text" id="cupon">
+                <input type="button" value="Total a pagar" onclick="valores()" title="Total a pagar">
+            </form><br>
+        </div>
+        <div id="respuesta">
+            <h4 id="titulo"></h4>
+            <p></p>
+        </div>
+    </center>
+    <!-- <script src="mediana.js"></script> -->
+    <!-- <script src="mediana.js"></script> -->
+</body>
+</html>
